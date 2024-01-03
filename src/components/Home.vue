@@ -39,7 +39,7 @@
         <router-link to="/project/2">
         <img src="/projects2.webp" alt="" class="h-[900px] w-[100%] object-cover hover-effect">
         <div class="font-style">
-          <p class="py-6 text-[22px]">Project 1</p>
+          <p class="py-6 text-[22px]">Project 2</p>
           <p class="text-[14px]">see more ⟶</p>
         </div>
       </router-link>
@@ -95,13 +95,13 @@
     </div>
     <div class="w-full mt-16 bg-black relative font-style">
       <img src="/contact-home.webp" alt="" class="h-[770px] w-full object-cover opacity-[0.3]">
-      <form class="absolute inset-0 flex items-center justify-center flex-col text-white">
+      <form class="absolute inset-0 flex items-center justify-center flex-col text-white" ref="form" @submit="sendEmail">
         <p class="text-[30px] pb-2 mx-4 text-center">YOU CAN ASK ANY QUESTIONS</p>
-        <input type="text" class="border-b text-[17px] leading-[0.2em] py-[15px] bg-[transparent] w-[800px] max-[900px]:w-[90%] pr-4 " placeholder="NAME*">
-        <input type="tel" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] w-[800px] max-[900px]:w-[90%] pr-4" placeholder="MAIL*">
-        <input type="mail" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] w-[800px] max-[900px]:w-[90%] pr-4" placeholder="TELEPHONE*">
-        <textarea name="" id="" placeholder="YOUR QUESTION" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] pt-[30px] w-[800px]  pr-4 max-h-[150px] min-h-[150px] max-[900px]:w-[90%]"></textarea>
-        <button class="rounded-[27px] border leading-[1px] py-6 px-16 mt-12 hover-effect-button">Ask</button>
+        <input type="text" required v-model="ime" name="ime" class="border-b text-[17px] leading-[0.2em] py-[15px] bg-[transparent] w-[800px] max-[900px]:w-[90%] pr-4 " placeholder="NAME*">
+        <input type="email" required v-model="email" name="email" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] w-[800px] max-[900px]:w-[90%] pr-4" placeholder="MAIL*">
+        <input type="phone" required v-model="telefon" name="telefon" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] w-[800px] max-[900px]:w-[90%] pr-4" placeholder="TELEPHONE*">
+        <textarea v-model="poruka" name="poruka" placeholder="YOUR QUESTION" class="bg-[transparent] border-b text-[17px] leading-[0.2em] py-[15px] pt-[30px] w-[800px]  pr-4 max-h-[150px] min-h-[150px] max-[900px]:w-[90%]"></textarea>
+        <button type="submit" class="rounded-[27px] border leading-[1px] py-6 px-16 mt-12 hover-effect-button">Ask</button>
       </form>
     </div>
   </div>
@@ -112,10 +112,20 @@
   import 'swiper/css';
   import 'swiper/css/pagination';
   import 'swiper/css/effect-fade';
-
   import { Pagination, EffectFade, Autoplay } from 'swiper/modules';
 
+  import emailjs from 'emailjs-com';
+
+
   export default {
+    data(){
+return{
+ ime:"",
+ email:"",
+ telefon:"",
+ poruka:""
+}
+},
     components: {
       Swiper,
       SwiperSlide,
@@ -128,6 +138,18 @@
         modules: [Pagination, EffectFade, Autoplay],
       };
     },
+    methods: {
+sendEmail() {
+ emailjs.sendForm('service_26j234o', 'template_6uybn4o', this.$refs.form, 'tGrrFjuKCc7u6wh3f')
+   .then((result) => {
+        console.log('SUCCESS!', result.text);
+   }, (error) => {
+       console.log('FAILED...', error.text);
+   });
+   
+},
+
+},
   };
 </script>
 
@@ -187,7 +209,5 @@ input,textarea {
     object-fit: cover;
   }
 
-.swiper-pagination-bullet-active {
-  background-color: black !important; /* Active bullet color */
-}
+
 </style>
