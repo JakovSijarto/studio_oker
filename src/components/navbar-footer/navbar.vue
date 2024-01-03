@@ -26,10 +26,10 @@
 
             <!-- Menu items -->
             <ul class="flex flex-col items-center gap-4">
-              <li><router-link to="/" @click="closeMenu" class="flex items-center gap-[2em]">Home <img src="/hamb-home.svg" alt="" class="w-8"></router-link></li> 
-              <li><router-link to="/projekti" @click="closeMenu" class="flex items-center gap-[2em]">Projekti <img src="/hamb-projects.svg" alt="" class="w-8"></router-link></li>
-              <li><router-link to="/cijena" @click="closeMenu" class="flex items-center gap-[2em]">Cijena <img src="/hamb-money.svg" alt="" class="w-8"></router-link></li>
-              <li><router-link to="/kontakt" @click="closeMenu" class="flex items-center gap-[2em]">Kontakt <img src="/hamb-kontakt.svg" alt="" class="w-8"></router-link></li>
+              <li><router-link to="/" @click="closeMenu" class="flex items-center gap-[2em]">Home</router-link></li> 
+              <li><router-link to="/projekti" @click="closeMenu" class="flex items-center gap-[2em]">Projekti</router-link></li>
+              <li><router-link to="/cijena" @click="closeMenu" class="flex items-center gap-[2em]">Cijena</router-link></li>
+              <li><router-link to="/kontakt" @click="closeMenu" class="flex items-center gap-[2em]">Kontakt</router-link></li>
             </ul>
           </div>
         </div>

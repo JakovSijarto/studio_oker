@@ -19,7 +19,7 @@
         </ul>
         <ul class="max-[560px]:hidden">
             <li><a href="">PHONE: +381643904535</a></li>
-            <li><a href="mailto:jelen.despot@gmail.com">EMAIL: studio@gmail.com</a></li>
+            <li><a href="mailto:jelen.despot@gmail.com">EMAIL: jelen.despot@gmail.com</a></li>
             <li><a href="https://www.instagram.com/studio_oker/">INSTAGRAM ▸ ▹</a></li>
         </ul>
       <div class="min-[561px]:hidden flex w-full justify-between items-center px-12 max-[400px]:flex-col max-[400px]:gap-[5em]">

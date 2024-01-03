@@ -8,7 +8,7 @@
         <li class="text-[16px] font-bold leading-[1.6] tracking-[0.2em]">TEL.NUMBER:</li>
         <li class="pt-2 pb-4"><a href="tel:+381643904535">+381643904535</a></li>
         <li class="text-[16px] font-bold leading-[1.6] tracking-[0.2em] pb-2">EMAIL:</li>
-        <li class="pb-4"><a href="mailto:jelen.despot@gmail.com">studio@gmail.com</a></li>
+        <li class="pb-4"><a href="mailto:jelen.despot@gmail.com">jelen.despot@gmail.com</a></li>
         <li class="flex gap-[0.5em]"><img src="/facebook.svg" alt="" class="w-8"><a href="https://www.instagram.com/studio_oker/"><img src="/instagram.svg" alt="" class="w-8"></a></li>
       </ul>
         <form class="flex flex-col items-center max-[900px]:w-full" ref="form" @submit="sendEmail">
@@ -21,9 +21,9 @@
       </form>
       <ul class="min-[901px]:hidden pt-16 text-center text-[14px]">
         <li class="text-[16px] font-bold leading-[1.6] tracking-[0.2em]">TEL.NUMBER:</li>
-        <li class="pt-2 pb-4">+7 (925) 298-38-87</li>
+        <li class="pt-2 pb-4"><a href="tel:+381643904535">+381643904535</a></li>
         <li class="text-[16px] font-bold leading-[1.6] tracking-[0.2em] pb-2">EMAIL:</li>
-        <li class="pb-4">shevrinamaria@gmail.com</li>
+        <li class="pb-4"><a href="mailto:jelen.despot@gmail.com">jelen.despot@gmail.com</a></li>
         <li class="flex gap-[0.5em] justify-center"><img src="/facebook.svg" alt="" class="w-8"><a href="https://www.instagram.com/studio_oker/"><img src="/instagram.svg" alt="" class="w-8"></a></li>
       </ul>
       </div>

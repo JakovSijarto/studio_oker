@@ -22,14 +22,14 @@
                 </div>
                 <span class="h-[200px] w-[2px] bg-black max-[700px]:hidden"></span>
                 <div class="mx-2 flex flex-col items-center">
-                    <p class="">PACK 1</p>
+                    <p class="text-[25px]">PACK 1</p>
                     <hr class="w-[50px] my-6 border-0 bg-black h-[2px]">
                     <p class="pb-4 text-[15px]">Floor plan + vizualisations | TERM - 3-4 months approximately.</p>
                     <p class="text-[13px]">60 eur/sqm</p>
                 </div>
                 <span class="h-[200px] w-[2px] bg-black max-[700px]:hidden"></span>
                 <div class="mx-2 flex flex-col items-center">
-                    <p class="">PACK 1</p>
+                    <p class="text-[25px]">PACK 1</p>
                     <hr class="w-[50px] my-6 border-0 bg-black h-[2px]">
                     <p class="pb-4 text-[15px]">Floor plan + vizualisations | TERM - 3-4 months approximately.</p>
                     <p class="text-[13px]">60 eur/sqm</p>
