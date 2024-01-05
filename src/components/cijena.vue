@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full font-style">
+    <div class="w-full">
         <div class="w-full flex justify-center items-center relative flex-col">
             <img src="/price-img.webp" alt="" class="border-b border-t border-black py-4 mt-52 w-[90%] min-h-[400px] object-cover">
             <div class="w-[90%] pt-32">

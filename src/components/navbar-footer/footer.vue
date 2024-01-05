@@ -1,5 +1,5 @@
 <template>
-    <div class="relative z-[9999] bg-white flex justify-center items-center w-full flex-col font-style">
+    <div class="relative z-[9999] bg-white flex justify-center items-center w-full flex-col">
         <div class="w-[90%] py-16">
       <svg height="3" width="100%" class="">
         <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:2" />

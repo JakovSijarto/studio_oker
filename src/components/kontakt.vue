@@ -1,6 +1,6 @@
 <template>
 <div class="pt-52">
-    <div class="w-full bg-black relative font-style">
+    <div class="w-full bg-black relative">
       <img src="/kontakt-photo.webp" alt="" class="h-[770px] w-full object-cover opacity-[0.3]">
         <div class="absolute inset-0 flex items-center w-full justify-center text-white ">
             <div class="w-[90%] flex justify-between items-center max-[900px]:flex-col">

@@ -1,10 +1,10 @@
 <template>
     <div class="pt-52 w-full">
-      <h2 class="pl-24 pb-16 max-[340px]:pl-0 max-[340px]:text-center font-style font-bold text-[18px]">Project Details</h2>
+      <h2 class="pl-24 pb-16 max-[340px]:pl-0 max-[340px]:text-center font-bold text-[18px]">Project Details</h2>
       <div class="w-full flex justify-center ">
         <div class="w-[90%] flex justify-between items-center gap-[3em] max-[1090px]:flex-col">
         <img :src="imagePath" alt="Project Image" class="max-h-[427px] w-[640px] object-cover max-[1090px]:w-full"/>
-        <div class="w-full flex justify-start flex-col font-style">
+        <div class="w-full flex justify-start flex-col">
           <p class="font-bold text-[18px]">{{ project.name }}</p>
           <p class="py-16 max-[400px]:py-8 text-[14px]">{{ project.description }}</p>
           <router-link to="/projekti" class="border w-[160px] h-[50px] flex justify-center items-center text-[18px] font-bold">Go back</router-link>

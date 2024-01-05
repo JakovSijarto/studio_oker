@@ -1,7 +1,7 @@
 <template>
-    <h1 class="pt-52 pl-24 pb-16 font-style_NotCourierSans font-bold text-[18px]">Projects:</h1>
+    <h1 class="pt-52 pl-24 pb-16 font-bold text-[18px]">Projects:</h1>
     <div class="w-full flex justify-center items-center">
-      <ul class="flex flex-wrap w-[90%] items-center justify-center font-style_NotCourierSans text-[22px]">
+      <ul class="flex flex-wrap w-[90%] items-center justify-center text-[22px]">
     <li v-for="project in projects" :key="project.id" class="mx-[15px] mb-[30px] max-[360px]:mx-2">
       <router-link :to="{ name: 'project-details', params: { id: project.id }}" class=" flex justify-start items-start flex-col  max-[985px]:w-[200px] max-[512px]:w-[100%]">
         <img :src="getImagePath(project.image)" alt="Project Image" class="w-[413px] max-h-[270px] h-[270px] object-cover max-[985px]:h-[700px] "/>
@@ -33,8 +33,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.font-style_NotCourierSans{
-  font-family: 'NotCourierSans', sans-serif;
-}
-</style>

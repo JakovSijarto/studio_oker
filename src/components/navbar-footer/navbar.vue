@@ -1,6 +1,6 @@
 <template>
     <div class="absolute z-[9999] w-full flex justify-center items-center py-16 max-[590px]:pt-8">
-        <div class="w-[90%] flex items-center justify-between font-style font-bold uppercase">
+        <div class="w-[90%] flex items-center justify-between font-bold uppercase">
             <img src="/logo.png" alt="" class="h-[120px] ">
             <ul class="flex gap-[2em] max-[590px]:hidden tracking-[0.1em]">
                 <li><router-link to="/" class="">Home </router-link></li> 
