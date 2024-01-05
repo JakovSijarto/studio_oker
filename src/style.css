@@ -1,4 +1,4 @@
-@import url("../fonts/webfonts/Montserrat-Alt1");
+@import url("/fonts/webfonts/Montserrat-Alt1");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
