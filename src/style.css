@@ -1,4 +1,10 @@
-@import url("/public/fonts/webfonts/Montserrat-Alt1");
+@font-face {
+  font-family: 'Montserrat-Alt1';
+  src: url('./fonts/MontserratAlt1-Regular.otf') format('opentype'),
+       url('./fonts/MontserratAlt1-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
