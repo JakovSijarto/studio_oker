@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Montserrat-Alt1';
-  src: url('./fonts/MontserratAlt1-Regular.otf') format('opentype'),
-       url('./fonts/MontserratAlt1-Regular.ttf') format('truetype');
+  src: url('/fonts/otf/MontserratAlt1-Regular.otf') format('opentype'),
+       url('/fonts/otf/MontserratAlt1-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
