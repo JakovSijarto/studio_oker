@@ -17,7 +17,7 @@
         <input type="email" required v-model="email" name="email" class="bg-[transparent] border-b leading-[0.15em] py-[15px] w-[600px] max-[900px]:w-[90%] pr-4" placeholder="Mail *">
         <input type="phone" required v-model="telefon" name="telefon" class="bg-[transparent] border-b leading-[0.15em] py-[15px] w-[600px] max-[900px]:w-[90%] pr-4" placeholder="Telephone *">
         <textarea id="" v-model="poruka" name="poruka" placeholder="Your Question" class="bg-[transparent] border-b leading-[0.15em] py-[15px] pt-[30px] w-[600px]  pr-4 max-h-[150px] min-h-[150px] max-[900px]:w-[90%]"></textarea>
-        <button type="submit" class="rounded-[27px] border leading-[1px] py-6 px-16 mt-12 hover-effect-button w-[200px]">Ask</button>
+        <button type="submit" class="rounded-[27px] border leading-[1px] py-6 px-16 mt-12 hover-effect-button w-[200px]">ask</button>
       </form>
       <ul class="min-[901px]:hidden pt-16 text-center text-[14px]">
         <li class="text-[16px] font-bold leading-[1.6] tracking-[0.2em]">TEL.NUMBER:</li>

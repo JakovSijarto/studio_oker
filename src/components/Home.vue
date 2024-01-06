@@ -1,15 +1,15 @@
 <template>
-  <div class="h-[100vh] relative z-[999] bg-white">
+  <div class="h-[100vh] relative z-[999] bg-white max-[580px]:h-[40vh]">
       <swiper :pagination="pagination" :loop="true" :modules="modules" :autoplay="{
       delay: 2500,
       disableOnInteraction: false,
     }"
      :effect="'fade'" class="mySwiper"
      >
-     <swiper-slide><img src="/hero-img1.webp" alt="" class="opacity-[0.66]"></swiper-slide>
-    <swiper-slide><img src="/hero-img2.webp" alt="" class="opacity-[0.66]"></swiper-slide>
-    <swiper-slide><img src="/hero-img3.webp" alt="" class="opacity-[0.66]"></swiper-slide>
-    <swiper-slide><img src="/hero-img4.webp" alt="" class="opacity-[0.66]"></swiper-slide>
+     <swiper-slide><img src="/hero-img1.webp" alt="" class="opacity-[0.8] max-[580px]:!h-[40vh]"></swiper-slide>
+    <swiper-slide><img src="/hero-img2.webp" alt="" class="opacity-[0.8] max-[580px]:!h-[40vh]"></swiper-slide>
+    <swiper-slide><img src="/hero-img3.webp" alt="" class="opacity-[0.8] max-[580px]:!h-[40vh]"></swiper-slide>
+    <swiper-slide><img src="/hero-img4.webp" alt="" class="opacity-[0.8] max-[580px]:!h-[40vh]"></swiper-slide>
   </swiper>
   </div>
   <div class="relative z-[1000] bg-white flex flex-col items-center ">
@@ -28,7 +28,7 @@
     <div class="w-[90%] flex gap-[5em] pt-[50px] justify-between items-center max-[740px]:flex-col">
       <div class="w-full bg-white cursor-pointer">
         <router-link to="/project/2">
-        <img src="/projects1.webp" alt="" class="h-[900px] w-[100%] object-cover hover-effect">
+        <img src="/projects1.webp" alt="" class="h-[900px] w-[100%] object-cover hover-effect max-[1000px]:h-[500px] max-[450px]:h-[300px]">
         <div class="">
           <p class="py-6 text-[22px]">Project 1</p>
           <p class="text-[14px]">see more ⟶</p>
@@ -37,7 +37,7 @@
       </div>
       <div class="w-full bg-white cursor-pointer">
         <router-link to="/project/2">
-        <img src="/projects2.webp" alt="" class="h-[900px] w-[100%] object-cover hover-effect">
+        <img src="/projects2.webp" alt="" class="h-[900px] w-[100%] object-cover hover-effect max-[1000px]:h-[500px] max-[450px]:h-[300px]">
         <div class="">
           <p class="py-6 text-[22px]">Project 2</p>
           <p class="text-[14px]">see more ⟶</p>
@@ -54,7 +54,7 @@
       </svg>
     </div>
     <div class="w-[90%] flex gap-[2em] max-[680px]:flex-col">
-      <img src="/aboutus-photo.webp" alt="" class="w-[50%] h-[1000px] object-cover max-[680px]:w-[100%] max-[680px]:h-[600px]">
+      <img src="/aboutus-photo.webp" alt="" class="w-[50%] h-[1000px] object-cover max-[680px]:w-[100%] max-[680px]:h-[600px] max-[400px]:h-[400px]">
       <div class="mx-8 max-[680px]:hidden">
         <div class="w-[90%] h-[1000px] flex">
       <svg height="100%" width="4" class="">
@@ -154,6 +154,7 @@ sendEmail() {
 </script>
 
 <style>
+
 .hover-effect-button:hover{
   background: white;
   color:black;
@@ -195,12 +196,12 @@ input,textarea {
 
     /* Center slide text vertically */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
   }
 
   .swiper-slide img {
-    display: block;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
